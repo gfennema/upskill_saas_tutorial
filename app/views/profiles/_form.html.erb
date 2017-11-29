@@ -7,6 +7,10 @@
     <%= f.label :last_name %><br />
     <%= f.text_field :last_name, class: 'form-control' %>
   </div>
+    <div class="field form-group">
+    <%= f.label :avatar %><br />
+    <%= f.file_field :avatar, class: 'form-control' %>
+  </div>
   <div class="field form-group">
     <%= f.label :job_title %><br />
     <%= f.select :job_title, ['Developer', 'Entrepreneur', 'Investor'], {}, class: 'form-control' %>
