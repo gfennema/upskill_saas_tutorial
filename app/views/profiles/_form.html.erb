@@ -1,4 +1,4 @@
-<%= form_for @profile, url: user_profile_path do |f| %>
+<%= form_for @profile, url: user_profile_path, :html => { :mulitpart => true } do |f| %>
   <div class="field form-group">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name, class: 'form-control' %>
